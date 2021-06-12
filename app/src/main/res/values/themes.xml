@@ -14,11 +14,34 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <!--<style name="select_role_block">
-    <item name="android:background">@drawable/select_role_block_bg</item>
-    <item name="android:layout_width">@dimen/role_block_width</item>
-    <item name="android:layout_height">@dimen/role_block_height</item>
-    <item name="android:layout_marginTop">@dimen/role_block_margin_top</item>
-</style>-->
+    <style name="registration_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:textSize">@dimen/textSizeNormal</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="registration_inputField">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+        <item name="android:fontFamily">@font/merriweather</item>
+    </style>
+
+
+    <style name="registration_tick">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_circle</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:src">@drawable/ic_tick</item>
+    </style>
+
+
+
 
 </resources>

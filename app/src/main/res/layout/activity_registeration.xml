@@ -7,4 +7,240 @@
     tools:context=".RegistrationActivity">
 
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="87dp"
+        android:src="@drawable/gradation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSignupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/roboto"
+        android:text="회원가입"
+        android:textColor="@color/lessBlack"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp"
+        app:constraint_referenced_ids="tvName,etName,dividerName"
+        app:flow_verticalAlign="center"
+        app:flow_verticalGap="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignupTitle" />
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/registration_title"
+        android:text="이름" />
+
+    <EditText
+        android:id="@+id/etName"
+        style="@style/registration_inputField"
+        android:hint="이채민" />
+
+    <View
+        android:id="@+id/dividerName"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp"
+        app:constraint_referenced_ids="tvPhone,etPhone,dividerPhone"
+        app:flow_verticalAlign="center"
+        app:flow_verticalGap="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flowName" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        style="@style/registration_title"
+        android:text="휴대폰 번호" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        style="@style/registration_inputField"
+        android:hint="+82 111 1111111" />
+
+    <View
+        android:id="@+id/dividerPhone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowDob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp"
+        app:constraint_referenced_ids="tvDob,etDob,dividerDob"
+        app:flow_verticalAlign="center"
+        app:flow_verticalGap="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flowPhone" />
+
+    <TextView
+        android:id="@+id/tvDob"
+        style="@style/registration_title"
+        android:text="생년월일" />
+
+    <EditText
+        android:id="@+id/etDob"
+        style="@style/registration_inputField"
+        android:hint="mm - dd-yyyy" />
+
+    <View
+        android:id="@+id/dividerDob"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp"
+        app:constraint_referenced_ids="tvEmail,etEmail,dividerEmail"
+        app:flow_verticalAlign="center"
+        app:flow_verticalGap="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flowDob" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        style="@style/registration_title"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        style="@style/registration_inputField"
+        android:hint="john.doe@alphametics.com" />
+
+    <View
+        android:id="@+id/dividerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp"
+        app:constraint_referenced_ids="tvPass,etPass,dividerPass"
+        app:flow_verticalAlign="center"
+        app:flow_verticalGap="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flowEmail" />
+
+    <TextView
+        android:id="@+id/tvPass"
+        style="@style/registration_title"
+        android:text="비밀번호" />
+
+    <EditText
+        android:id="@+id/etPass"
+        style="@style/registration_inputField"
+        android:inputType="textPassword" />
+
+    <View
+        android:id="@+id/dividerPass"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowConfirmPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp"
+        app:constraint_referenced_ids="tvConfirmPass,etConfirmPass,dividerConfirmPass"
+        app:flow_verticalAlign="center"
+        app:flow_verticalGap="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flowPass" />
+
+    <TextView
+        android:id="@+id/tvConfirmPass"
+        style="@style/registration_title"
+        android:text="비밀번호 확인" />
+
+    <EditText
+        android:id="@+id/etConfirmPass"
+        style="@style/registration_inputField"
+        android:inputType="textPassword" />
+
+    <View
+        android:id="@+id/dividerConfirmPass"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowConfi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:constraint_referenced_ids="ivTick,tvConf"
+        app:flow_horizontalAlign="start"
+        app:flow_horizontalGap="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flowConfirmPass" />
+
+
+    <ImageView
+        android:id="@+id/ivTick"
+        style="@style/registration_tick" />
+
+
+    <TextView
+        android:id="@+id/tvConf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 확인" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
