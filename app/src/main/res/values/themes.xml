@@ -33,15 +33,105 @@
     </style>
 
 
+    <style name="registration_login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/textSizeNormal</item>
+        <item name="android:fontFamily">@font/merriweather</item>
+    </style>
+
+
     <style name="registration_tick">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@drawable/bg_circle</item>
         <item name="android:padding">4dp</item>
         <item name="android:src">@drawable/ic_tick</item>
     </style>
 
 
 
+
+    <style name="registration_pass_conditions">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/textSizeExtraSmall</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+
+    <style name="registration_flowRight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/_24dp</item>
+        <item name="android:layout_marginEnd">@dimen/_30dp</item>
+        <item name="flow_horizontalAlign">start</item>
+        <item name="flow_horizontalGap">@dimen/_15dp</item>
+    </style>
+
+
+    <style name="registration_flowLeft">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/_24dp</item>
+        <item name="android:layout_marginStart">@dimen/_30dp</item>
+        <item name="flow_horizontalAlign">start</item>
+        <item name="flow_horizontalGap">@dimen/_15dp</item>
+    </style>
+
+
+    <style name="custom_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_55dp</item>
+        <item name="android:layout_marginStart">@dimen/_64dp</item>
+        <item name="android:layout_marginEnd">@dimen/_64dp</item>
+        <item name="android:layout_marginBottom">@dimen/_18dp</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+
+    <style name="alphametrica">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/_60dp</item>
+        <item name="android:layout_marginBottom">@dimen/_87dp</item>
+        <item name="android:src">@drawable/gradation</item>
+    </style>
+
+
+    <style name="flowTop">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingStart">@dimen/_35dp</item>
+        <item name="android:paddingEnd">@dimen/_35dp</item>
+        <item name="flow_verticalAlign">center</item>
+        <item name="flow_verticalGap">@dimen/_8dp</item>
+    </style>
+
+    <style name="flowLogin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingStart">@dimen/_40dp</item>
+        <item name="android:paddingEnd">@dimen/_40dp</item>
+        <item name="flow_verticalAlign">center</item>
+        <item name="flow_verticalGap">@dimen/_15dp</item>
+    </style>
+
+
+    <style name="screenTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/_35dp</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/lessBlack</item>
+        <item name="android:textSize">@dimen/_23dp</item>
+    </style>
 
 </resources>

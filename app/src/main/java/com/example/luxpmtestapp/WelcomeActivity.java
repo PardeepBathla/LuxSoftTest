@@ -16,12 +16,9 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_welcome);
 
-        binding.btnSignup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                goToRegistrationScreen();
-            }
-        });
+        binding.btnSignup.setOnClickListener(view -> goToRegistrationScreen());
+
+
 
     }
 
